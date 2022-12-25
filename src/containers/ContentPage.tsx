@@ -26,7 +26,17 @@ function ContentPage() {
                     </h1>
                     <p className='text-primary-white text-2xl lg:text-3xl leading-10 font-semibold'>
                         {
-                            query?.content ? query.content
+                            query?.content ?
+                                <>
+                                    {query.content}
+                                    <br />
+                                    <Link
+                                        to="/form"
+                                        className="bg-green text-primary-white text-sm font-semibold py-2 px-4 mt-4 rounded-md inline-block"
+                                    >
+                                        Sən də sevdiklərini təbrik et :)
+                                    </Link>
+                                </>
                                 :
                                 <>
                                     {message.content}

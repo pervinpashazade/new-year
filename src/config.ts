@@ -1,1 +1,1 @@
-export const domain = "https://new-year.vercel.app"
+export const domain = "https://yeni-il.vercel.app"
