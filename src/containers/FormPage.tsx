@@ -3,6 +3,7 @@ import queryString from 'query-string';
 import Swal from 'sweetalert2';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { domain } from 'config';
 
 function HomePage() {
 
@@ -45,7 +46,7 @@ function HomePage() {
         }
 
         const link = queryString.stringifyUrl({
-            url: "http://localhost:3000/",
+            url: domain,
             query: {
                 "name": name,
                 "author": author,
